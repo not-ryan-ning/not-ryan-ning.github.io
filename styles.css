@@ -11,7 +11,7 @@
     src: url("title_fonts1/Apparel/Apparel\ Display\ Regular.ttf") format("truetype");
 }
 
-.text_container2 .text .special {
+.text-container2 .text .special {
     color: hsl(29, 100%, 64%); 
 }
 
@@ -29,7 +29,7 @@ body {
     background-color: #0c0c0c;
 }
 
-.text_container .text {
+.text-container .text {
     margin: 10px;
     position: relative;
     font-size: 3rem;
@@ -37,7 +37,7 @@ body {
     color: white;
 }
 
-.text_container .subtitle {
+.text-container .subtitle {
     margin: 10px;
     position: relative;
     font-size: 2rem;
@@ -45,7 +45,7 @@ body {
     color: white;
 }
 
-.text_container .paragraph_text {
+.text-container .paragraph-text {
     margin: 10px;
     position: relative;
     font-size: 1rem;
@@ -53,7 +53,7 @@ body {
     color: white;
 }
 
-.text_container {
+.text-container {
     padding: 10px;
     opacity: 0;
     position: relative;
@@ -63,11 +63,11 @@ body {
     text-align: left;
     width: 90%;
     border: 1px solid hsl(200, 100%, 55%);
-    animation: show_text 0.2s linear forwards;
+    animation: show-text 0.2s linear forwards;
     animation-delay: 1.80s;
 }
 
-.text_container::before {
+.text-container::before {
     content: " ";
     display: block;
     position: absolute;
@@ -75,11 +75,11 @@ body {
     inset: 0 0 0 0;
     background: hsl(200, 100%, 55%);
     z-index: 3;
-    animation: reveal_text 1.2s ease forwards; 
+    animation: reveal-text 1.2s ease forwards; 
     animation-delay: 2s;
 }
 
-.text_container1 .text {
+.text-container1 .text {
     margin: 0;
     position: relative;
     font-size: 2.3rem;
@@ -87,7 +87,7 @@ body {
     color: white;
 }
 
-.text_container1 {
+.text-container1 {
     padding: 10px;
     opacity: 0;
     position: relative;
@@ -97,11 +97,11 @@ body {
     text-align: center;
     width: 90%;
     border: 1px solid hsl(314, 92%, 54%);
-    animation: show_text 0.2s linear forwards;
+    animation: show-text 0.2s linear forwards;
     animation-delay: 2s;
 }
 
-.text_container1::before {
+.text-container1::before {
     content: " ";
     display: block;
     position: absolute;
@@ -109,11 +109,11 @@ body {
     inset: 0 0 0 0;
     background: hsl(314, 92%, 54%);
     z-index: 3;
-    animation: reveal_text 1.2s ease forwards;
+    animation: reveal-text 1.2s ease forwards;
     animation-delay: 2.3s;
 }
 
-.text_container2 .text {
+.text-container2 .text {
     margin: 0;
     position: relative;
     font-size: 2rem;
@@ -121,7 +121,7 @@ body {
     color: white;
 }
 
-.text_container2 {
+.text-container2 {
     padding: 10px;
     opacity: 0;
     position: relative;
@@ -131,11 +131,11 @@ body {
     text-align: center;
     width: 90%;
     border: 1px solid hsl(29, 100%, 55%);
-    animation: show_text 0.2s linear forwards;
+    animation: show-text 0.2s linear forwards;
     animation-delay: 2.3s;
 }
 
-.text_container2::before {
+.text-container2::before {
     content: " ";
     display: block;
     position: absolute;
@@ -143,11 +143,11 @@ body {
     inset: 0 0 0 0;
     background: hsl(29, 100%, 55%);
     z-index: 3;
-    animation: reveal_text 1.2s ease forwards;
+    animation: reveal-text 1.2s ease forwards;
     animation-delay: 2.6s;
 }
 
-@keyframes reveal_text {
+@keyframes reveal-text {
     from{
         opacity: 1;
     }
@@ -157,7 +157,7 @@ body {
     }
 }
 
-@keyframes show_text {
+@keyframes show-text {
     from {
         opacity: 0;
     }
@@ -169,32 +169,25 @@ body {
 
 /* title name  */
 
-.title {
+.desktop-title {
     left: 0; right: 0;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
     width: 100%;
     text-align: center;
-    animation: reposition forwards;
+    animation: reposition-desktop forwards;
     animation-duration: 0.5s;
     animation-delay: 1.35s; 
-    font-size: 10px;
 }
 
-@keyframes reposition {
+@keyframes reposition-desktop {
     to {
         transform: translateY(-285px) scale(0.5);
     }
 }
 
-@keyframes reveal {
-    to {
-        opacity: 1;
-    }
-}
-
-.title h1 {
+.desktop-title h1 {
     cursor: default;
     color: white;
     font-family:'Roboto';
@@ -204,26 +197,97 @@ body {
     rgb(187, 8, 172), rgb(88, 86, 217),      
     rgb(52, 170, 220), rgb(76, 217, 105),
     rgb(52, 170, 220),  rgb(52, 170, 220));
-    font-size: 160px;
+    font-size: 10rem;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 500% auto;
-    animation: background_animation 10s linear infinite;
+    animation: background-animation 10s linear infinite;
 }
 
+.mobile-title {
+    left: 0; right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    animation: reposition-mobile forwards;
+    animation-duration: 0.5s;
+    animation-delay: 1.35s; 
+}
 
-.title span::before {
+@keyframes reposition-mobile {
+    to {
+        transform: translateY(-220px) scale(0.5);
+    }
+}
+
+.mobile-title h1 {
+    cursor: default;
+    color: white;
+    font-family:'Roboto';
+    background: linear-gradient(to right,     
+    rgb(52, 170, 220), rgb(52, 170, 220),     
+    rgb(88, 86, 217), rgb(255, 45, 83),       
+    rgb(187, 8, 172), rgb(88, 86, 217),      
+    rgb(52, 170, 220), rgb(76, 217, 105),
+    rgb(52, 170, 220),  rgb(52, 170, 220));
+    font-size: 7rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: background-animation 10s linear infinite;
+}
+
+.tiny-title {
+    left: 0; right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    animation: reposition-tiny forwards;
+    animation-duration: 0.5s;
+    animation-delay: 1.35s; 
+}
+
+@keyframes reposition-tiny {
+    to {
+        transform: translateY(-180px) scale(0.5);
+    }
+}
+
+.tiny-title h1 {
+    cursor: default;
+    color: white;
+    font-family:'Roboto';
+    background: linear-gradient(to right,     
+    rgb(52, 170, 220), rgb(52, 170, 220),     
+    rgb(88, 86, 217), rgb(255, 45, 83),       
+    rgb(187, 8, 172), rgb(88, 86, 217),      
+    rgb(52, 170, 220), rgb(76, 217, 105),
+    rgb(52, 170, 220),  rgb(52, 170, 220));
+    font-size: 5rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: background-animation 10s linear infinite;
+}
+
+.desktop-title span::before, .mobile-title span::before, .tiny-title h1 span::before {
     font-family: 'fontbold';
     content: "RYAN";
     animation: words 0.8s linear;
 }
 
-.title span::after {
+.desktop-title span::after, .mobile-title span::after, .tiny-title span::before {
     content: "";
     width: calc(100% + 8px);
     height: 100%;
-    border-left: 7px solid #000000;
+    border-left: 7px solid #0c0c0c;
     right: -10px;
     margin: 0 -7px 0 0;
     animation: cursor 1s 2.1 linear, typing 20s steps(14) infinite;
@@ -280,7 +344,7 @@ body {
     }
 }
 
-@keyframes background_animation {
+@keyframes background-animation {
     0% {
         background-position: 0%;
     }
@@ -289,6 +353,43 @@ body {
         background-position: 100%;
     }
 }
+
+.mobile-title {
+    display: none;
+}
+
+.desktop-title {
+    display: block;
+}
+
+.tiny-title {
+    display: none;
+}
+
+@media (max-width:635px) {
+    .desktop-title {
+        display: none;
+    }
+    .mobile-title {
+        display: block;
+    }
+    .tiny-title {
+        display: none;
+    }
+}
+
+@media (max-width:442px) {
+    .desktop-title {
+        display: none;
+    }
+    .mobile-title {
+        display: none;
+    }
+    .tiny-title {
+        display: block;
+    }
+}
+
 
 
 /* triangle building divs */
