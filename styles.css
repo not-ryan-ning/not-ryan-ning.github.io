@@ -53,6 +53,10 @@ body {
     color: white;
 }
 
+.text-container .paragraph-text .special, .text-container .text .special {
+    color: hsl(200, 98%, 64%); 
+}
+
 .text-container {
     padding: 10px;
     opacity: 0;
