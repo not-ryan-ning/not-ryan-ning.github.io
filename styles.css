@@ -81,6 +81,32 @@ body {
     animation-delay: 2s;
 }
 
+.mobile-text-container {
+    padding: 10px;
+    opacity: 0;
+    position: relative;
+    margin: auto;
+    background-clip: border-box;
+    margin-top: 60px;
+    text-align: left;
+    width: 90%;
+    border: 1px solid hsl(200, 100%, 55%);
+    animation: show-text 0.2s linear forwards;
+    animation-delay: 1.80s;
+}
+
+.mobile-text-container::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200, 100%, 55%);
+    z-index: 3;
+    animation: reveal-text 1.2s ease forwards; 
+    animation-delay: 2s;
+}
+
 .mobile-text-container .text {
     margin: 10px;
     position: relative;
@@ -111,32 +137,6 @@ body {
 
 .mobile-text-container .paragraph-text .special, .mobile-text-container .text .special {
     color: hsl(200, 98%, 64%); 
-}
-
-.mobile-text-container {
-    padding: 10px;
-    opacity: 0;
-    position: relative;
-    margin: auto;
-    background-clip: border-box;
-    margin-top: 80px;
-    text-align: left;
-    width: 90%;
-    border: 1px solid hsl(200, 100%, 55%);
-    animation: show-text 0.2s linear forwards;
-    animation-delay: 1.80s;
-}
-
-.mobile-text-container::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    inset: 0 0 0 0;
-    background: hsl(200, 100%, 55%);
-    z-index: 3;
-    animation: reveal-text 1.2s ease forwards; 
-    animation-delay: 2s;
 }
 
 .text-container1 .text {
@@ -322,7 +322,7 @@ body {
 
 @keyframes reposition-tiny {
     to {
-        transform: translateY(-145px) scale(0.5);
+        transform: translateY(-138px) scale(0.5);
     }
 }
 
