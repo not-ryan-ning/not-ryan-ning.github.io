@@ -76,7 +76,7 @@ body {
     background: hsl(200, 100%, 55%);
     z-index: 3;
     animation: reveal_text 1.2s ease forwards; 
-    animation-delay: 1.85s;
+    animation-delay: 2s;
 }
 
 .text_container1 .text {
@@ -98,7 +98,7 @@ body {
     width: 90%;
     border: 1px solid hsl(314, 92%, 54%);
     animation: show_text 0.2s linear forwards;
-    animation-delay: 1.80s;
+    animation-delay: 2s;
 }
 
 .text_container1::before {
@@ -110,7 +110,7 @@ body {
     background: hsl(314, 92%, 54%);
     z-index: 3;
     animation: reveal_text 1.2s ease forwards;
-    animation-delay: 1.95s;
+    animation-delay: 2.3s;
 }
 
 .text_container2 .text {
@@ -132,7 +132,7 @@ body {
     width: 90%;
     border: 1px solid hsl(29, 100%, 55%);
     animation: show_text 0.2s linear forwards;
-    animation-delay: 1.80s;
+    animation-delay: 2.3s;
 }
 
 .text_container2::before {
@@ -144,7 +144,7 @@ body {
     background: hsl(29, 100%, 55%);
     z-index: 3;
     animation: reveal_text 1.2s ease forwards;
-    animation-delay: 2s;
+    animation-delay: 2.6s;
 }
 
 @keyframes reveal_text {
