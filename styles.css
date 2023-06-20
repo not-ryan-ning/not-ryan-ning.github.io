@@ -255,7 +255,7 @@ body {
 
 @keyframes reposition-tiny {
     to {
-        transform: translateY(-210px) scale(0.5);
+        transform: translateY(-180px) scale(0.5);
     }
 }
 
@@ -269,7 +269,7 @@ body {
     rgb(187, 8, 172), rgb(88, 86, 217),      
     rgb(52, 170, 220), rgb(76, 217, 105),
     rgb(52, 170, 220),  rgb(52, 170, 220));
-    font-size: 6.5rem;
+    font-size: 5rem;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
