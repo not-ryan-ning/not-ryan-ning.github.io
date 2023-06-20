@@ -87,7 +87,7 @@ body {
     position: relative;
     margin: auto;
     background-clip: border-box;
-    margin-top: 60px;
+    margin-top: 100px;
     text-align: left;
     width: 90%;
     border: 1px solid hsl(200, 100%, 55%);
@@ -110,7 +110,7 @@ body {
 .mobile-text-container .text {
     margin: 10px;
     position: relative;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-family: 'fontbold', 'times new roman';
     color: white;
 }
@@ -118,7 +118,7 @@ body {
 .mobile-text-container .subtitle {
     margin: 10px;
     position: relative;
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-family: 'font', 'times new roman';
     color: white;
 }
@@ -322,7 +322,7 @@ body {
 
 @keyframes reposition-tiny {
     to {
-        transform: translateY(-138px) scale(0.5);
+        transform: translateY(-157px) scale(0.5);
     }
 }
 
