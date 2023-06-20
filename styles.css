@@ -11,10 +11,6 @@
     src: url("title_fonts1/Apparel/Apparel\ Display\ Regular.ttf") format("truetype");
 }
 
-.text-container2 .text .special {
-    color: hsl(29, 100%, 64%); 
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -28,6 +24,8 @@ a:active, a:hover{
 body {
     background-color: #0c0c0c;
 }
+
+/* information / text containers */
 
 .text-container .text {
     margin: 10px;
@@ -48,7 +46,7 @@ body {
 .text-container .paragraph-text {
     margin: 10px;
     position: relative;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-family: 'font', 'times new roman';
     color: white;
 }
@@ -151,6 +149,12 @@ body {
     animation-delay: 2.6s;
 }
 
+.text-container2 .text .special {
+    color: hsl(29, 100%, 64%); 
+}
+
+/* reveal text and show text containers animations */
+
 @keyframes reveal-text {
     from{
         opacity: 1;
@@ -183,6 +187,7 @@ body {
     animation: reposition-desktop forwards;
     animation-duration: 0.5s;
     animation-delay: 1.35s; 
+    transition: opacity;
 }
 
 @keyframes reposition-desktop {
@@ -195,7 +200,7 @@ body {
     cursor: default;
     color: white;
     font-family:'Roboto';
-    background: linear-gradient(to right,     
+    background: linear-gradient(to right, rgb(52, 170, 220),    
     rgb(52, 170, 220), rgb(52, 170, 220),     
     rgb(88, 86, 217), rgb(255, 45, 83),       
     rgb(187, 8, 172), rgb(88, 86, 217),      
@@ -297,6 +302,8 @@ body {
     animation: cursor 1s 2.1 linear, typing 20s steps(14) infinite;
 }
 
+/* typing animation */
+
 @keyframes typing {
     10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
         width: 0;
@@ -358,6 +365,8 @@ body {
     }
 }
 
+/* mobile / desktop compatability */
+
 .mobile-title {
     display: none;
 }
@@ -393,39 +402,4 @@ body {
         display: block;
     }
 }
-
-
-
-/* triangle building divs */
-
-/* .top {
-    margin: auto;
-    width: 500px; 
-    height: 0; 
-    background-color: transparent;
-    border-left: 13px solid transparent;
-    border-right: 0px solid transparent;
-    border-top: 20px solid #04adfc;
-}
-
-.right {
-    margin: auto;
-    width: 472px; 
-    height: 0; 
-    background-color: transparent;
-    border-left: 0px solid transparent;
-    border-right: 11.5px solid transparent;
-    border-bottom: 20px solid #04adfc;
-    transform: rotate(300.7deg) translateY(210px) translateX(-76.5px)
-}
-
-.left {
-    margin: auto;
-    width: 489px; 
-    height: 0; 
-    background-color: transparent;
-    border-left: 0px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 20px solid #04adfc;
-    transform: rotate(58deg) translateY(181px) translateX(85px)
-} */
+ 
